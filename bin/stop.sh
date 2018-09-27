@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-docker-compose stop
+DIR="$(dirname "$0")"
+
+docker-compose -f "$DIR/../docker-compose.yml" stop
