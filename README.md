@@ -6,7 +6,10 @@ This image is a extension of the official laravel/laravel github repository but 
 ### First Time Install
 ```bash
 # This will setup file permissions for project
-$ sh init.sh
+$ sh bin/init.sh
+
+# Installs a new Laravel Instance
+$ sh bin/install.sh
 
 # Next we create the docker containers,
 # run composer and the default migrations 

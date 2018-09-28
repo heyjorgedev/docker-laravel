@@ -24,7 +24,7 @@ FROM node:8.11 as frontend
 WORKDIR /app
 RUN mkdir -p /app/public
 
-COPY htdocs/package.json htdocs/webpack.mix.js htdocs/yarn.lock /app/
+COPY htdocs/package.json htdocs/webpack.mix.js /app/
 RUN yarn install
 
 COPY htdocs/resources/ /app/resources/
